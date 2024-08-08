@@ -1,17 +1,24 @@
-package Data;
-
+package prueba.Data;
 
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-
+@RequiredArgsConstructor
 @Component
 public class PokeData {
 
-    @Autowired
+
     private  RestTemplate restTemplate;
+
+
+
+    @Autowired
+    public PokeData(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
 
     /**

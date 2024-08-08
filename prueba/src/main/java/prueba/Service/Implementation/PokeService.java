@@ -1,17 +1,19 @@
-package Service.Implementation;
+package prueba.Service.Implementation;
 
 
-import Data.PokeData;
-import lombok.RequiredArgsConstructor;
+import prueba.Data.PokeData;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import Service.IPokeService;
+import prueba.Service.IPokeService;
 
 
-@RequiredArgsConstructor
+
 @Service
 public class PokeService  implements IPokeService {
 
-    private final PokeData pokeData;
+    @Autowired private  PokeData pokeData;
+
 
     @Override
     public String getPokemons(int offset, int limit) {

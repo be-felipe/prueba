@@ -1,8 +1,8 @@
-package Controller;
+package prueba.Controller;
 
-import Service.IPokeService;
-import com.example.pokemon.webservice.generated.GetPokemonRequest;
-import com.example.pokemon.webservice.generated.GetPokemonResponse;
+import prueba.Service.IPokeService;
+import prueba.generated.GetPokemonRequest;
+import prueba.generated.GetPokemonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -16,7 +16,7 @@ public class PokeController {
     private static final String NAMESPACE_URI = "http://example.com/pokemon/webservice";
 
     @Autowired
-    private  IPokeService pokemonService;
+    private IPokeService pokemonService;
 
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPokemonRequest")

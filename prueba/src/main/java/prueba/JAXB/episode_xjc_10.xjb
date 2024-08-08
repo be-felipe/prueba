@@ -13,10 +13,10 @@ Generado el: 2024.08.07 a las 09:49:55 PM COT
       <jaxb:package name="com.example.pokemon.webservice.generated"/>
     </jaxb:schemaBindings>
     <jaxb:bindings scd="getPokemonRequest">
-      <jaxb:class ref="com.example.pokemon.webservice.generated.GetPokemonRequest"/>
+      <jaxb:class ref="prueba.generated.GetPokemonRequest"/>
     </jaxb:bindings>
     <jaxb:bindings scd="getPokemonResponse">
-      <jaxb:class ref="com.example.pokemon.webservice.generated.GetPokemonResponse"/>
+      <jaxb:class ref="prueba.generated.GetPokemonResponse"/>
     </jaxb:bindings>
   </jaxb:bindings>
 </jaxb:bindings>

@@ -6,10 +6,11 @@
 //
 
 
-package com.example.pokemon.webservice.generated;
+package prueba.generated;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -24,8 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="offset" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="limit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="pokemons" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,45 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "offset",
-    "limit"
+    "pokemons"
 })
-@XmlRootElement(name = "getPokemonRequest")
-public class GetPokemonRequest {
+@XmlRootElement(name = "getPokemonResponse")
+public class GetPokemonResponse {
 
-    protected int offset;
-    protected int limit;
+    @XmlElement(required = true)
+    protected String pokemons;
 
     /**
-     * Obtiene el valor de la propiedad offset.
+     * Obtiene el valor de la propiedad pokemons.
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public int getOffset() {
-        return offset;
+    public String getPokemons() {
+        return pokemons;
     }
 
     /**
-     * Define el valor de la propiedad offset.
+     * Define el valor de la propiedad pokemons.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setOffset(int value) {
-        this.offset = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad limit.
-     * 
-     */
-    public int getLimit() {
-        return limit;
-    }
-
-    /**
-     * Define el valor de la propiedad limit.
-     * 
-     */
-    public void setLimit(int value) {
-        this.limit = value;
+    public void setPokemons(String value) {
+        this.pokemons = value;
     }
 
 }

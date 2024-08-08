@@ -6,7 +6,7 @@
 //
 
 
-package com.example.pokemon.webservice.generated;
+package prueba.generated;
 
 import jakarta.xml.bind.annotation.XmlRegistry;
 

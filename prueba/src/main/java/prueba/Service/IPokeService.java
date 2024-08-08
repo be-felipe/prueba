@@ -1,4 +1,4 @@
-package Service;
+package prueba.Service;
 
 /**
  *
@@ -6,6 +6,7 @@ package Service;
  */
 
 public interface IPokeService {
+
 
 
     public String getPokemons(int offset, int limit) ;
